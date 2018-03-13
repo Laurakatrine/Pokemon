@@ -14,3 +14,11 @@ C:\Users\Laura\OneDrive - Syddansk Universitet\2 semester\videregående udviklin
 C:\Users\Laura\OneDrive - Syddansk Universitet\2 semester\videregående udvikling af 3d applikationer\Pokemon\Pokemon\bin\Debug\Pokemon.exe
 C:\Users\Laura\OneDrive - Syddansk Universitet\2 semester\videregående udvikling af 3d applikationer\Pokemon\Pokemon\bin\Debug\Pokemon.pdb
 C:\Users\Laura\OneDrive - Syddansk Universitet\2 semester\videregående udvikling af 3d applikationer\Pokemon\Pokemon\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Laura\OneDrive - Syddansk Universitet\2 semester\videregående udvikling af 3d applikationer\Git\Pokemon\Pokemon\bin\Debug\Pokemon.exe.config
+C:\Users\Laura\OneDrive - Syddansk Universitet\2 semester\videregående udvikling af 3d applikationer\Git\Pokemon\Pokemon\bin\Debug\Pokemon.exe
+C:\Users\Laura\OneDrive - Syddansk Universitet\2 semester\videregående udvikling af 3d applikationer\Git\Pokemon\Pokemon\bin\Debug\Pokemon.pdb
+C:\Users\Laura\OneDrive - Syddansk Universitet\2 semester\videregående udvikling af 3d applikationer\Git\Pokemon\Pokemon\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Laura\OneDrive - Syddansk Universitet\2 semester\videregående udvikling af 3d applikationer\Git\Pokemon\Pokemon\obj\Debug\Pokemon.csprojResolveAssemblyReference.cache
+C:\Users\Laura\OneDrive - Syddansk Universitet\2 semester\videregående udvikling af 3d applikationer\Git\Pokemon\Pokemon\obj\Debug\Pokemon.csproj.CoreCompileInputs.cache
+C:\Users\Laura\OneDrive - Syddansk Universitet\2 semester\videregående udvikling af 3d applikationer\Git\Pokemon\Pokemon\obj\Debug\Pokemon.exe
+C:\Users\Laura\OneDrive - Syddansk Universitet\2 semester\videregående udvikling af 3d applikationer\Git\Pokemon\Pokemon\obj\Debug\Pokemon.pdb

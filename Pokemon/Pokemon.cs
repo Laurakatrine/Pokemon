@@ -72,7 +72,7 @@ namespace Pokemon
             
 
             Totaldamage = (baseAttack * level);
-            //Console.WriteLine("first part of Attack" + Totaldamage);
+          //  Console.WriteLine("first part of Attack" + Totaldamage);
             Totaldamage = CalculateElementalEffects(Totaldamage, enemy.element) - CalculateDefence(enemy.baseDefence, enemy.level);
             
             if(Totaldamage < 0)
@@ -81,8 +81,8 @@ namespace Pokemon
             }
             
 
-            ApplyDamage(Totaldamage);
-
+           // ApplyDamage(Totaldamage);
+            //Console.WriteLine(Totaldamage + "has been applied to HP.HP is now" + hp);
             return Totaldamage;
         }
 
@@ -111,7 +111,7 @@ namespace Pokemon
             if (element == Elements.Fire && enemyType == Elements.Water)
             {
                 damage = damage*(1/2);
-               // Console.WriteLine("Fire+Water");
+              // Console.WriteLine("Fire+Water");
                 
             }
             if (element == Elements.Fire && enemyType == Elements.Grass)
@@ -144,7 +144,7 @@ namespace Pokemon
 
             }
             
-            //Console.WriteLine("CalculateElementalEffects" + damage);
+           // Console.WriteLine("CalculateElementalEffects" + damage);
 
             return damage; 
         }
@@ -153,14 +153,18 @@ namespace Pokemon
         /// Applies damage to the pokemon
         /// </summary>
         /// <param name="damage"></param>
-        public void ApplyDamage(int damage)
+        public int ApplyDamage(int damage)
         {
+            
+            
+           // Console.WriteLine("HP before applyDamage" + Hp );
+            hp = hp - damage; 
 
-            //throw new NotImplementedException();
-            //Console.WriteLine("HP before applyDamage" + Hp );
-            hp = hp - damage;
+
             //Console.WriteLine("ApplyDamage: " + hp);
             //Console.WriteLine("Hp after applyDamage" + Hp);
+
+            return hp; 
         }
 
         /// <summary>

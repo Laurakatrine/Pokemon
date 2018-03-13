@@ -45,7 +45,7 @@ namespace Pokemon
 
             while (true)
             {
-                Console.WriteLine("\nPlese enter a command");
+                Console.WriteLine("\nPlease enter a command");
                 switch (Console.ReadLine())
                 {
                     case "list":
@@ -117,7 +117,9 @@ namespace Pokemon
  
                                 //CALCULATE AND APPLY DAMAGE
                                 
-                                int damage = player.Attack(enemy); 
+                                int damage = player.Attack(enemy);
+                                int applydamagetoenemy = enemy.ApplyDamage(damage);
+
 
                                 //print the move and damage
                                 Console.WriteLine(player.Name + " uses " + player.Moves[move].Name + ". " + enemy.Name + " loses " + damage + " HP");
@@ -136,13 +138,15 @@ namespace Pokemon
                                      */
                                     int enemyMove = rand.Next(roster.Count-1); 
                                     int enemyDamage = enemy.Attack(player);
+                                    int applydamagetoplayer = player.ApplyDamage(enemyDamage);
+
 
                                     //print the move and damage
                                     Console.WriteLine(enemy.Name + " uses " + enemy.Moves[enemyMove].Name + ". " + player.Name + " loses " + enemyDamage + " HP");
                                 }
                             }
                             //The loop is over, so either we won or lost
-                            if (enemy.Hp <= 0)
+                            if (enemy.Hp <= 0) //DET VIRKER NÅR JEG LAVER DEN HER OM, fordi den trækker hp fra den forkerte!
                             {
                                 Console.WriteLine(enemy.Name + " faints, you won!");
                             }
