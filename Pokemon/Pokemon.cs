@@ -110,7 +110,10 @@ namespace Pokemon
         {  
             if (element == Elements.Fire && enemyType == Elements.Water)
             {
-                damage = damage*(1/2);
+                
+                damage = damage / 2;
+                
+
               // Console.WriteLine("Fire+Water");
                 
             }
@@ -121,7 +124,8 @@ namespace Pokemon
             }
             if (element == Elements.Water && enemyType == Elements.Grass)
             {
-                damage = damage * (1 / 2);
+                
+                damage = damage / 2;
                 //Console.WriteLine("water+grass");
 
             }
@@ -133,7 +137,8 @@ namespace Pokemon
             }
             if (element == Elements.Grass && enemyType == Elements.Fire)
             {
-                damage = damage * (1 / 2);
+                
+                damage = damage / 2;
                 //Console.WriteLine("grass+fire");
 
             }
@@ -155,16 +160,18 @@ namespace Pokemon
         /// <param name="damage"></param>
         public int ApplyDamage(int damage)
         {
+
+           
+                // Console.WriteLine("HP before applyDamage" + Hp );
+                hp = hp - damage;
+
+
+                //Console.WriteLine("ApplyDamage: " + hp);
+                //Console.WriteLine("Hp after applyDamage" + Hp);
+
+                return hp;
             
             
-           // Console.WriteLine("HP before applyDamage" + Hp );
-            hp = hp - damage; 
-
-
-            //Console.WriteLine("ApplyDamage: " + hp);
-            //Console.WriteLine("Hp after applyDamage" + Hp);
-
-            return hp; 
         }
 
         /// <summary>

@@ -111,7 +111,7 @@ namespace Pokemon
                                 }
                                 else
                                 {
-                                    Console.WriteLine("Invalid move");
+                                    Console.WriteLine("Invalid move " + player.Name + " got confused");
                                     break;
                                 }
  
@@ -143,6 +143,7 @@ namespace Pokemon
 
                                     //print the move and damage
                                     Console.WriteLine(enemy.Name + " uses " + enemy.Moves[enemyMove].Name + ". " + player.Name + " loses " + enemyDamage + " HP");
+                                
                                 }
                             }
                             //The loop is over, so either we won or lost
