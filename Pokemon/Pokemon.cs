@@ -72,7 +72,7 @@ namespace Pokemon
             
 
             Totaldamage = (baseAttack * level);
-          //  Console.WriteLine("first part of Attack" + Totaldamage);
+
             Totaldamage = CalculateElementalEffects(Totaldamage, enemy.element) - CalculateDefence(enemy.baseDefence, enemy.level);
             
             if(Totaldamage < 0)
@@ -81,8 +81,7 @@ namespace Pokemon
             }
             
 
-           // ApplyDamage(Totaldamage);
-            //Console.WriteLine(Totaldamage + "has been applied to HP.HP is now" + hp);
+          
             return Totaldamage;
         }
 
@@ -95,7 +94,7 @@ namespace Pokemon
             int defence;
 
             defence = (enemyBaseDefence * enemylevel);
-            //Console.WriteLine("CalculateDefence" + defence);
+          
 
             return defence; 
         }
@@ -114,25 +113,25 @@ namespace Pokemon
                 damage = damage / 2;
                 
 
-              // Console.WriteLine("Fire+Water");
+             
                 
             }
             if (element == Elements.Fire && enemyType == Elements.Grass)
             {
                 damage = damage * 2;
-                //Console.WriteLine("Fire+grass");
+                
             }
             if (element == Elements.Water && enemyType == Elements.Grass)
             {
                 
                 damage = damage / 2;
-                //Console.WriteLine("water+grass");
+                
 
             }
             if (element == Elements.Water && enemyType == Elements.Fire)
             {
                 damage = damage * 2;
-                //Console.WriteLine("water+fire");
+               
 
             }
             if (element == Elements.Grass && enemyType == Elements.Fire)
@@ -145,11 +144,11 @@ namespace Pokemon
             if (element == Elements.Grass && enemyType == Elements.Water)
             {
                 damage = damage * 2;
-                //Console.WriteLine("grass+Water");
+                
 
             }
             
-           // Console.WriteLine("CalculateElementalEffects" + damage);
+           
 
             return damage; 
         }
@@ -159,15 +158,8 @@ namespace Pokemon
         /// </summary>
         /// <param name="damage"></param>
         public int ApplyDamage(int damage)
-        {
-
-           
-                // Console.WriteLine("HP before applyDamage" + Hp );
+        {              
                 hp = hp - damage;
-
-
-                //Console.WriteLine("ApplyDamage: " + hp);
-                //Console.WriteLine("Hp after applyDamage" + Hp);
 
                 return hp;
             
@@ -183,8 +175,6 @@ namespace Pokemon
         {
             
             hp = maxHp;
-
-            //Console.WriteLine("restore" + Hp);
             
         }
     }
