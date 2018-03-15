@@ -85,7 +85,9 @@ namespace Pokemon
                                 }
                                
                             }
-                        }           
+
+                        }
+                        
 
                         //if everything is fine and we have 2 pokemons let's make them fight
                         if (player != null && enemy != null && player != enemy)
@@ -111,8 +113,8 @@ namespace Pokemon
                                 }
                                 else
                                 {
-                                    Console.WriteLine("Invalid move " + player.Name + " got confused");
-                                    break;
+                                    Console.WriteLine("Invalid move, " + player.Name + " got confused");
+                                    continue;
                                 }
  
                                 //CALCULATE AND APPLY DAMAGE
