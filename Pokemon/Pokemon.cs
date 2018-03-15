@@ -111,10 +111,7 @@ namespace Pokemon
             {
                 
                 damage = damage / 2;
-                
-
-             
-                
+               
             }
             if (element == Elements.Fire && enemyType == Elements.Grass)
             {
@@ -138,7 +135,7 @@ namespace Pokemon
             {
                 
                 damage = damage / 2;
-                //Console.WriteLine("grass+fire");
+              
 
             }
             if (element == Elements.Grass && enemyType == Elements.Water)
@@ -162,8 +159,6 @@ namespace Pokemon
                 hp = hp - damage;
 
                 return hp;
-            
-            
         }
 
         /// <summary>
